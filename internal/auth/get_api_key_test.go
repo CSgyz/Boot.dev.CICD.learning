@@ -55,7 +55,7 @@ func TestGetAPIKey(t *testing.T) {
 			wantErr: false,
 		},
 	}
-  // 遍历所有用例
+	// 遍历所有用例
 	for _, tt := range tests {
 		t.Run(tt.name, func(t *testing.T) {
 			gotKey, err := GetAPIKey(tt.headers)
