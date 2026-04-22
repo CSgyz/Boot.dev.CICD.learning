@@ -18,5 +18,8 @@ jobs:
         with:
           go-version: "1.26.0"
 
-      - name: Force Failure
+      - name: Auth Fuction Test
         run: go test -cover ./...
+
+      - name: check code style
+        run: test -z $(go fmt ./...)
