@@ -21,5 +21,8 @@ jobs:
       - name: Auth Fuction Test
         run: go test -cover ./...
 
+      - name: Show formatting output
+        run: go fmt ./...
+        
       - name: check code style
         run: test -z "$(go fmt ./...)"
