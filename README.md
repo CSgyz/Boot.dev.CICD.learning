@@ -21,3 +21,86 @@ Clone the repo:
 ```bash
 git clone https://github.com/<your-username>/learn-cicd-starter.git
 cd learn-cicd-starter
+
+Create a .env file in the root of the project:
+
+PORT="8080"
+
+Build and run the server:
+
+go build -o notely && ./notely
+
+Then open:
+
+http://localhost:8080
+Usage
+
+This application currently runs as a simple local Go web server.
+
+By default, it starts in non-database mode. You do not need to set up a database or add webpage interactivity yet. Those features will be introduced later in the course.
+
+Useful local development commands:
+
+go build -o notely
+./notely
+
+Or run both together:
+
+go build -o notely && ./notely
+Contributing
+
+Contributions are welcome, especially improvements related to learning, documentation, local development, and CI/CD practice.
+
+Clone the repo
+git clone https://github.com/<your-username>/learn-cicd-starter.git
+cd learn-cicd-starter
+Create a new branch
+
+Create a branch for your changes:
+
+git checkout -b your-feature-name
+
+Example:
+
+git checkout -b improve-readme
+Set up the local environment
+
+Make sure you're using Go version 1.22+.
+
+Create a .env file in the root of the project:
+
+PORT="8080"
+Build and run the app
+go build -o notely && ./notely
+
+Visit the app locally at:
+
+http://localhost:8080
+Make your changes
+
+You can contribute by improving areas such as:
+
+README documentation
+Local development instructions
+Go code structure
+CI/CD workflow configuration
+Tests and build scripts
+Check your changes
+
+Before opening a pull request, make sure the project still builds successfully:
+
+go build -o notely
+Commit your changes
+git add .
+git commit -m "Improve README documentation"
+Push your branch
+git push origin your-feature-name
+Open a pull request
+
+Open a pull request from your branch into the main branch of this repository.
+
+Please include a short description of:
+
+What you changed
+Why you changed it
+How you tested it locally
